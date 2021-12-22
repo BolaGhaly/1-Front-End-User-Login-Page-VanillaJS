@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/*---------------------------------- Custom CSS Variables -----------------------------------*/
+:root {
+  --footer-height: 100px;
+}
+/*-------------------------------------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 410px) {
+  :root {
+    --footer-height: 123px;
+  }
+}
+/*------------------------------------- Container ------------------------------------------------------*/
+.flex-container {
+  padding: 10px 15px;
+  min-height: calc(100vh - var(--footer-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border-radius: 15px 15px;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(184, 187, 193, 0.5);
+  width: 400px;
+}
+.header {
+  border-radius: 15px 15px 0 0;
+  background-color: rgb(175, 175, 175);
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.76);
+}
+.header h2 {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 40px;
+}
+.form-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-control label {
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-control input {
+  border: 2px solid #f0f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+}
+.form-control input::placeholder {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.form-control i {
+  position: absolute;
+  font-size: 18px;
+  top: 44px;
+  right: 10px;
+  visibility: hidden;
+}
+.form-control small {
+  font-size: 15px;
+  font-weight: 500;
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+.form button {
+  background-color: rgb(175, 175, 175);
+  color: black;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  display: block;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+/* Success vs Error Classes */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+/*------------------------------------- Footer -----------------------------------------------------*/
+footer {
+  min-height: var(--footer-height);
+  color: white;
+  text-align: center;
+}
+footer a {
+  padding-top: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+footer a:last-of-type {
+  margin-left: 3rem;
+}
+footer p {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  padding: 15px 10px 10px 10px;
+  margin: 0 0;
+}
+.fab {
+  color: white;
+}
+.fa-linkedin:hover {
+  color: rgba(230, 230, 230, 0.85);
+  opacity: 0.8;
+}
+.fa-github:hover {
+  color: rgba(230, 230, 230, 0.85);
+  opacity: 0.8;
+}
