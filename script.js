@@ -68,7 +68,7 @@ password_small.innerHTML = "Error message";
 let passwordVal_small = document.createElement("small");
 passwordVal_small.innerHTML = "Error message";
 
-//Check (Green) Circle 
+//Check (Green) Circle + Exclamation Point (Red) Circle
 let username_greenCircle = document.createElement("i");
 username_greenCircle.classList = "fas fa-check-circle";
 let username_redCircle = document.createElement("i");
